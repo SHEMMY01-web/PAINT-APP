@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+.tool-section {
+  width: 800px;
+  background-color: #262626; 
+  border-radius: 20px;
+  padding: 20px 30px 20px 30px;
+  border: 1px solid #333;
+}
+.drawing-area {
+  width: 4000px;
+  border-radius: 20px;
+  background-color: #262626; 
+}
+
+.can {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 800px;
+  width: 1375px;
+  cursor:crosshair;
+}
+.clear {
+  margin-top: 50px;
+  width: 60%;
+  padding: 12px 15px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.2s ease, transform 0.1s ease; 
+}
+
+.clear:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+.save {
+  margin-top: 20px;
+  width: 60%;
+  padding: 12px 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.save:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px); 
+}
+
+
+.option img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  transition: filter 0.2s ease, transform 0.1s ease; 
+  cursor: pointer;
+}
+
+.option img:hover {
+  
+  filter: invert(30%) sepia(80%) saturate(2000%) hue-rotate(200deg) brightness(100%) contrast(100%);
+  transform: scale(1.1); 
+}
+
+#fill:checked ~ label {
+  color: #007bff;
+}
+.colour > * {
+  transition: transform 0.2s ease;
+}
+.colour > *:hover {
+  transform: scale(1.15);
+}
+.shapes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#white {
+  background-color: white;
+  border: solid 1px;
+  width: 44px;
+  height: 35px;
+  padding: 1px 2px;
+}
+#blue {
+  background-color: blue;
+  border: solid 1px;
+  width: 44px;
+  height: 35px;
+  padding: 1px 2px;
+}
+#red {
+  background-color: red;
+  border: solid 1px;
+  width: 44px;
+  height: 35px;
+  padding: 1px 2px;
+}
+#green {
+  background-color: green;
+  border: solid 1px;
+  width: 44px;
+  height: 35px;
+  padding: 1px 2px;
+}
+#pink {
+  background-color: pink;
+  border: solid 1px;
+  width: 44px;
+  height: 35px;
+  padding: 1px 2px;
+}
+.color-picker {
+  border: solid 1px;
+  width: 44px;
+  height: 35px;
+  padding: 1px 2px;
+}
+#white,
+#blue,
+#red,
+#green,
+#pink,
+#color-picker {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #555555;
+  cursor: pointer;
+  position: relative; 
+}
+#color-picker {
+  background-color: #000000;
+  overflow: hidden;
+}
+#color-picker input[type="color"] {
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container {
+  padding: 50px;
+  margin: 0px 50px 0px 50px;
+  display: flex;
+  height: 800px;
+  gap: 10px;
+}
+
+.drawing-area {
+  width: 4000px;
+  border-radius: 20px;
+}
+
+.can {
+  border-radius: 20px;
+  height: 800px;
+  width: 1375px;
+}
+.save {
+  display: block;
+  margin-top: 15px;
+}
+input[type="range"] {
+  height: 8px;
+  width: 200px;
+}
+input[type="range"] {
+  height: 8px;
+  width: 200px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  background: #3a3a3a;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  background: #3a3a3a;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  width: 18px;
+  height: 18px;
+  background: #007bff;
+  border-radius: 50%;
+  border: 2px solid #262626;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #007bff;
+  border-radius: 50%;
+  border: none;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background: #0099ff;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  background: #0099ff;
+}
+ul li {
+  list-style: none;
+}
+.colour {
+  padding: 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  gap: 10px;
+}
+.options {
+  margin-top: 50px;
+}
