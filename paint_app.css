@@ -153,8 +153,9 @@ body {
 }
 .container {
   padding: 50px;
-  margin: 0px 50px 0px 50px;
+  /* margin: 0px 50px 0px 50px; */
   display: flex;
+  scale: 0.5;
   height: 800px;
   gap: 10px;
 }
