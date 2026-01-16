@@ -1,115 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paint App</title>
-    <link rel="stylesheet" href="paint_app.css" />
-    <link rel="shortcut icon" href="./svg_icons/paint-brush.jpg" type="image/x-icon">
-  </head>
-  <body>
-    <div class="container">
-      <div class="tool-section">
-        <div class="row">
-          <label class="shapes">SHAPES</label>
-          <div class="shapes-container">
-            <div class="option">
-              <img
-                src="./svg_icons/bx-rectangle-wide.svg"
-                alt="RECTANGLE"
-                title="RECTANGLE"
-                id="rectangle"
-                class="Rectangle"
-              />
-            </div>
-            <div class="option">
-              <img
-                src="./svg_icons/bx-square.svg"
-                alt="SQUARE"
-                title="SQUARE"
-                id="square"
-              />
-            </div>
-            <div class="option">
-              <img
-                src="./svg_icons/bx-triangle.svg"
-                alt="TRIANGLE"
-                title="TRIANGLE"
-                id="triangle"
-              />
-            </div>
-            <div class="option">
-              <img
-                src="./svg_icons/bx-circle (1).svg"
-                alt="CIRCLE"
-                title="CIRCLE"
-                id="circle"
-              />
-            </div>
-            <div class="option">
-              <img
-                src="./svg_icons/horizontal-line-svgrepo-com.svg"
-                alt="LINE"
-                title="LINE"
-                id="line"
-                width="9%"
-              />
-            </div>
-            </div>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paint App</title>
+  <link rel="stylesheet" href="paint_app.css" />
+  <link rel="shortcut icon" href="./svg_icons/paint-brush.jpg" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="tool-section">
+      <div class="row">
+        <label class="shapes">SHAPES</label>
+        <div class="shapes-container">
           <div class="option">
-            <input type="checkbox" id="fill" />
-            <label for="fill">Fill Color</label>
+            <img src="./svg_icons/bx-rectangle-wide.svg" alt="RECTANGLE" title="RECTANGLE" id="rectangle"
+              class="Rectangle" />
           </div>
-
-          <p class="options">OPTIONS</p>
-
-          <ul class="options-list">
-            <li class="option">
-              <img
-                src="./svg_icons/bx-brush.svg"
-                alt="Brush"
-                title="BRUSH"
-                id="brush"
-              />
-              <span>Brush</span>
-            </li>
-            <li class="option">
-              <img
-                src="./svg_icons/bxs-eraser.svg"
-                alt="Eraser"
-                id="eraser"
-                title="ERASER"
-              />
-              <span>Eraser</span>
-            </li>
-            <li class="option">
-              <input type="range" id="size" min="0" max="100" value="5"/>
-              <span id="ran">Size: 5px</span>
-            </li>
-          </ul>
-
-          <p class="color">COLOR</p>
-          <div class="colour">
-            <div class="optionss" id="white"></div>
-            <div class="optionss" id="blue"></div>
-            <div class="optionss" id="red"></div>
-            <div class="optionss" id="green"></div>
-            <div class="optionss" id="pink"></div>
-            <div class="optionss" id="color-picker">
-              <input type="color" value="#000000" />
-            </div>
+          <div class="option">
+            <img src="./svg_icons/bx-square.svg" alt="SQUARE" title="SQUARE" id="square" />
           </div>
-
-          <div class="buttons-container">
-            <button class="clear">clear</button>
-            <button class="save">save</button>
+          <div class="option">
+            <img src="./svg_icons/bx-triangle.svg" alt="TRIANGLE" title="TRIANGLE" id="triangle" />
           </div>
-
+          <div class="option">
+            <img src="./svg_icons/bx-circle (1).svg" alt="CIRCLE" title="CIRCLE" id="circle" />
           </div>
+          <div class="option">
+            <img src="./svg_icons/horizontal-line-svgrepo-com.svg" alt="LINE" title="LINE" id="line" width="9%" />
+          </div>
+        </div>
+
+        <div class="option">
+          <input type="checkbox" id="fill" />
+          <label for="fill">Fill Color</label>
+        </div>
+
+        <p class="options">OPTIONS</p>
+
+        <ul class="options-list">
+          <li class="option">
+            <img src="./svg_icons/bx-brush.svg" alt="Brush" title="BRUSH" id="brush" />
+            <span>Brush</span>
+          </li>
+          <li class="option">
+            <img src="./svg_icons/bxs-eraser.svg" alt="Eraser" id="eraser" title="ERASER" />
+            <span>Eraser</span>
+          </li>
+          <li class="option">
+            <input type="range" id="size" min="0" max="100" value="5" />
+            <span id="ran">Size: 5px</span>
+          </li>
+        </ul>
+
+        <p class="color">COLOR</p>
+        <div class="colour">
+          <div class="optionss" id="white"></div>
+          <div class="optionss" id="blue"></div>
+          <div class="optionss" id="red"></div>
+          <div class="optionss" id="green"></div>
+          <div class="optionss" id="pink"></div>
+          <div class="optionss" id="color-picker">
+            <input type="color" value="#000000" />
+          </div>
+        </div>
+
+        <div class="buttons-container">
+          <button class="clear">clear</button>
+          <button class="save">save</button>
+        </div>
       </div>
-      <div class="drawing-area"><canvas class="can"></canvas></div>
     </div>
-    <script src="paint_app.js"></script>
-  </body>
+    <div class="drawing-area"><canvas class="can"></canvas></div>
+  </div>
+  <script src="paint_app.js"></script>
+</body>
+
 </html>
