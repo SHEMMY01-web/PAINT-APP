@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 50px;
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
   background-color: #1a1a1a;
   color: #f0f0f0;
@@ -99,62 +99,71 @@ body {
 #white {
   background-color: white;
   border: solid 1px;
-  width: 44px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
   padding: 1px 2px;
+  border-radius: 8px;
 }
 
 #blue {
   background-color: blue;
   border: solid 1px;
-  width: 44px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
   padding: 1px 2px;
+  border-radius: 8px;
 }
 
 #red {
   background-color: red;
   border: solid 1px;
-  width: 44px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
   padding: 1px 2px;
+  border-radius: 8px;
 }
 
 #green {
   background-color: green;
   border: solid 1px;
-  width: 44px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
   padding: 1px 2px;
+  border-radius: 8px;
 }
 
 #pink {
   background-color: pink;
   border: solid 1px;
-  width: 44px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
   padding: 1px 2px;
+  border-radius: 8px;
 }
 
 .color-picker {
   border: solid 1px;
-  width: 44px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   padding: 1px 2px;
+  border-radius: 8px;
+  
 }
 
-#white,
-#blue,
-#red,
-#green,
-#pink,
+
 #color-picker {
+  cursor: pointer;
+  position: relative;
+  background-color: #000000;
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  border: 2px solid #555555;
-  cursor: pointer;
-  position: relative;
+  overflow: hidden;
 }
 
 #color-picker {
